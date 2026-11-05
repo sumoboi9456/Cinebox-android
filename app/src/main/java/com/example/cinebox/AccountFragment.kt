@@ -1,4 +1,6 @@
 package com.example.cinebox
+
+import android.content.Intent
 import android.app.AlertDialog
 import android.content.Context
 import android.os.Bundle
@@ -28,6 +30,19 @@ class AccountFragment : Fragment() {
         favDb = FavoriteDbHelper(requireContext())
         view.findViewById<TextView>(R.id.txtUsername).text = session.username
         txtFavCount = view.findViewById(R.id.txtFavCount)
+
+        // --- ĐOẠN CODE BẮT SỰ KIỆN NÚT ---
+        view.findViewById<Button>(R.id.btnMyReviews).setOnClickListener {
+            val intent = Intent(requireContext(), MyReviewsActivity::class.java)
+            startActivity(intent)
+        }
+
+        view.findViewById<Button>(R.id.btnChangePassword).setOnClickListener {
+            val intent = Intent(requireContext(), ChangePasswordActivity::class.java)
+            startActivity(intent)
+        }
+        // -----------------------------------
+
         view.findViewById<Button>(R.id.btnExport).setOnClickListener { exportFavorites() }
         view.findViewById<Button>(R.id.btnReadExport).setOnClickListener { showFiles() }
         view.findViewById<Button>(R.id.btnLogout).setOnClickListener {
