@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Màu chữ của tab: được chọn = vàng, còn lại = xám ấm -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="@color/cine_gold" />
+    <item android:color="@color/cine_text_dim" />
+</selector>

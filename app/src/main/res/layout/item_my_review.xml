@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Một dòng trong danh sách "Đánh giá của tôi" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Cine.ListItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtMovieTitle"
+            style="@style/Widget.Cine.Body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tên phim (2010)"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtScore"
+            style="@style/Widget.Cine.Rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★ 9" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtComment"
+        style="@style/Widget.Cine.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Bình luận..."
+        android:textColor="@color/cine_text_dim"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        style="@style/Widget.Cine.Caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="start"
+        android:text="Ngày đánh giá: 02/11/2026"
+        android:textSize="12sp" />
+</LinearLayout>

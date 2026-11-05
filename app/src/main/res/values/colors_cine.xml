@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nền (đen ấm của rạp chiếu) -->
+    <color name="cine_bg">#0B0A0F</color>
+    <color name="cine_surface">#16141C</color>
+    <color name="cine_card">#D9141018</color>
+    <color name="cine_input">#CC1B1822</color>
+    <color name="cine_tabbar">#F0100D14</color>
+    <!-- Màu nhấn: đỏ rèm, vàng ánh đèn -->
+    <color name="cine_red">#E50914</color>
+    <color name="cine_red_dark">#A8070F</color>
+    <color name="cine_gold">#F2B632</color>
+    <color name="cine_gold_dark">#C98A12</color>
+    <color name="cine_danger">#FF5A5F</color>
+    <!-- Chữ & viền -->
+    <color name="cine_text">#F5F0E6</color>
+    <color name="cine_text_dim">#A89F91</color>
+    <color name="cine_hint">#6F675C</color>
+    <color name="cine_border">#3A3340</color>
+    <color name="cine_white">#FFFFFF</color>
+</resources>

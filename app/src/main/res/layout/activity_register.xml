@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_cine_login" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            style="@style/Widget.Cine.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="90dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Widget.Cine.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ĐĂNG KÝ" />
+
+            <TextView
+                style="@style/Widget.Cine.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Tạo tài khoản để lưu phim yêu thích" />
+
+            <EditText
+                android:id="@+id/edtUsername"
+                style="@style/Widget.Cine.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:hint="Tên đăng nhập"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/Widget.Cine.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edtConfirm"
+                style="@style/Widget.Cine.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="Nhập lại mật khẩu"
+                android:inputType="textPassword" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRegister"
+                style="@style/Widget.Cine.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Đăng ký" />
+
+            <TextView
+                android:id="@+id/txtGoLogin"
+                style="@style/Widget.Cine.Link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Đã có tài khoản? Đăng nhập" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Nút mũi tên quay về màn hình trước -->
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|start"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_cine_chip"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="←"
+        android:textColor="@color/cine_gold"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+</FrameLayout>

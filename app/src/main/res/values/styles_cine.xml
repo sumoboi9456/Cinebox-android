@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lưu ý: style có dấu chấm trong tên mà không khai báo parent sẽ bị Android hiểu là
+         con của style trước dấu chấm. Vì vậy các style gốc bên dưới đều có parent="". -->
+
+    <!-- ===== NÚT (dùng androidx.appcompat.widget.AppCompatButton) ===== -->
+    <style name="Widget.Cine.Button" parent="">
+        <item name="android:textColor">@color/cine_white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
+    <style name="Widget.Cine.Button.Primary">
+        <item name="android:background">@drawable/btn_cine_primary</item>
+    </style>
+    <style name="Widget.Cine.Button.Secondary">
+        <item name="android:background">@drawable/btn_cine_secondary</item>
+        <item name="android:textColor">@color/cine_gold</item>
+    </style>
+    <style name="Widget.Cine.Button.Danger">
+        <item name="android:background">@drawable/btn_cine_danger</item>
+        <item name="android:textColor">@color/cine_danger</item>
+    </style>
+
+    <!-- ===== Ô NHẬP ===== -->
+    <style name="Widget.Cine.EditText" parent="">
+        <item name="android:background">@drawable/bg_cine_input</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cine_text</item>
+        <item name="android:textColorHint">@color/cine_hint</item>
+        <item name="android:textColorHighlight">#55F2B632</item>
+    </style>
+
+    <!-- ===== CHECKBOX ===== -->
+    <style name="Widget.Cine.CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/cine_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="buttonTint">@color/cine_gold</item>
+    </style>
+
+    <!-- ===== CHỮ ===== -->
+    <style name="Widget.Cine.Title" parent="">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">@color/cine_gold</item>
+        <item name="android:letterSpacing">0.18</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Widget.Cine.Caption" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">@color/cine_text_dim</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Widget.Cine.Body" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cine_text</item>
+    </style>
+    <style name="Widget.Cine.Link" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/cine_gold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- Nhãn thể loại (chip) và điểm đánh giá -->
+    <style name="Widget.Cine.Chip" parent="">
+        <item name="android:background">@drawable/bg_cine_chip</item>
+        <item name="android:textColor">@color/cine_gold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+    <style name="Widget.Cine.Rating" parent="">
+        <item name="android:background">@drawable/bg_cine_rating</item>
+        <item name="android:textColor">@color/cine_gold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <!-- Thanh thông báo (ví dụ: đang ngoại tuyến) -->
+    <style name="Widget.Cine.Banner" parent="">
+        <item name="android:background">@drawable/bg_cine_banner</item>
+        <item name="android:textColor">@color/cine_white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!-- ===== KHUNG ===== -->
+    <style name="Widget.Cine.Card" parent="">
+        <item name="android:background">@drawable/bg_cine_card</item>
+        <item name="android:padding">24dp</item>
+    </style>
+    <style name="Widget.Cine.ListItem" parent="">
+        <item name="android:background">@drawable/bg_cine_item</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <!-- ===== THANH TAB DƯỚI CÙNG (tự dựng, không cần Material) ===== -->
+    <style name="Widget.Cine.TabBar" parent="">
+        <item name="android:background">@drawable/bg_cine_tabbar</item>
+    </style>
+    <style name="Widget.Cine.Tab" parent="">
+        <item name="android:background">@drawable/bg_cine_tab</item>
+        <item name="android:textColor">@color/cine_tab_text</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+</resources>

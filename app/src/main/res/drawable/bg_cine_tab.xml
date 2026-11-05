@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tab được chọn (isSelected = true): nền vàng nhạt + vạch vàng ở trên -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#1AF2B632" />
+                </shape>
+            </item>
+            <item android:gravity="top" android:height="3dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/cine_gold" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+</selector>

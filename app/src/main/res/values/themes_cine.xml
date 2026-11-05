@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme dùng chung. Gắn vào <application android:theme="@style/Theme.Cine"> -->
+    <style name="Theme.Cine" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/cine_red</item>
+        <item name="colorPrimaryDark">@color/cine_bg</item>
+        <item name="colorAccent">@color/cine_gold</item>
+        <item name="android:windowBackground">@color/cine_bg</item>
+        <item name="android:statusBarColor">@color/cine_bg</item>
+        <item name="android:navigationBarColor">@color/cine_bg</item>
+        <item name="android:textColorPrimary">@color/cine_text</item>
+        <item name="android:textColorHint">@color/cine_hint</item>
+        <item name="android:alertDialogTheme">@style/Theme.Cine.Dialog</item>
+    </style>
+
+    <!-- Hộp thoại (AlertDialog, DatePickerDialog...) cùng phong cách -->
+    <style name="Theme.Cine.Dialog" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/bg_cine_dialog</item>
+        <item name="android:colorAccent">@color/cine_gold</item>
+        <item name="android:textColorPrimary">@color/cine_text</item>
+        <item name="android:textColorSecondary">@color/cine_text_dim</item>
+    </style>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tab Tài khoản -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/Widget.Cine.Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtUsername"
+            style="@style/Widget.Cine.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtFavCount"
+            style="@style/Widget.Cine.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Số phim yêu thích: 0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMyReviews"
+            style="@style/Widget.Cine.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Đánh giá của tôi" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChangePassword"
+            style="@style/Widget.Cine.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Đổi mật khẩu" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnExport"
+            style="@style/Widget.Cine.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Xuất danh sách yêu thích" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReadExport"
+            style="@style/Widget.Cine.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Xem file đã xuất" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogout"
+            style="@style/Widget.Cine.Button.Danger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Đăng xuất" />
+
+        <!-- Ghi nguồn dữ liệu theo điều khoản của TMDB (đối chiếu câu chữ với trang themoviedb.org) -->
+        <TextView
+            android:id="@+id/txtAttribution"
+            style="@style/Widget.Cine.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Dữ liệu phim được cung cấp từ TMDB.\nThis product uses the TMDB API but is not endorsed or certified by TMDB."
+            android:textSize="11sp" />
+    </LinearLayout>
+</ScrollView>
